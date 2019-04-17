@@ -19,9 +19,9 @@ class EmployeesListPresenter : EmployeesListPresentationLogic {
 
     func presentEmployeesList(response: EmployeesList.FetchEmployees.Response) {
         
-        print(response.response);
+        print(response.data);
         
-        let viewModel = EmployeesList.FetchEmployees.ViewModel.init(employees: response.response)
+        let viewModel = EmployeesList.FetchEmployees.ViewModel.init(employees: response.data)
         viewController?.displayEmployees(viewModel: viewModel)
     }
 

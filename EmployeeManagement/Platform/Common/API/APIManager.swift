@@ -45,7 +45,7 @@ class APIManager : ApiClient {
                                            encoding: encoding,
                                            headers: requestModel.headers)
             .validate(statusCode: 200..<300)
-            .validate(contentType: ["application/json"])
+            .validate(contentType: ["application/json;charset=utf-8"])
             .responseData { response in
                 switch response.result {
                 case .success(let data):

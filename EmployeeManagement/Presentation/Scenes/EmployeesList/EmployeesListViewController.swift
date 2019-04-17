@@ -119,7 +119,7 @@ extension EmployeesListViewController: UITableViewDataSource {
         if cell == nil {
             cell = UITableViewCell(style: .value1, reuseIdentifier: "employeeCell")
         }
-        cell?.textLabel?.text = employees[indexPath.row].name
+        cell?.textLabel?.text = employees[indexPath.row].first_name
 
         return cell!
     }

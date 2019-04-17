@@ -17,7 +17,7 @@ class EmployeeListWorker {
     func getAllEmployees(completion: @escaping (Result<EmployeesList.FetchEmployees.Response?, APIError>) -> Void) {
 
         let apiModel = APIRequestModel(method: .get,
-                                url: "http://dummy.restapiexample.com/api/v1/employees",
+                                url: "https://reqres.in/api/users",
                                 headers: nil,
                                 params: nil,
                                 paramsEncoding: .json)

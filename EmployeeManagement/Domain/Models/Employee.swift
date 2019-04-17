@@ -11,21 +11,18 @@ import Foundation
 public struct Employee : Codable{
     
     public let id: Int
-    public let name : String
-    public let salary: String
-    public let age: String
-    public let profileimage: String
+    public let first_name : String
+    public let last_name: String
+    public let avatar: String
     
     public init(id: Int,
-                name: String,
-                salary: String,
-                age: String,
-                profileimage: String) {
+                first_name: String,
+                last_name: String,
+                avatar: String) {
         self.id = id
-        self.name = name
-        self.salary = salary
-        self.age = age
-        self.profileimage = profileimage
+        self.first_name = first_name
+        self.last_name = last_name
+        self.avatar = avatar
     }
 }
 
